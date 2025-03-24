@@ -20,4 +20,6 @@ from django.urls import path, include  # Include is needed
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("qa/", include("qa.urls")),  #  This must be here!
+    path('auth/', include('users.urls')),  # New Authentication Routes
+
 ]
