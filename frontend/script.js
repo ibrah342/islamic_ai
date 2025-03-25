@@ -19,6 +19,6 @@ async function askQuestion() {
         let data = await response.json();
         responseElement.innerHTML = `<strong>Answer:</strong> ${data.answer}`;
     } catch (error) {
-        responseElement.innerHTML = "Failed to fetch answer. Is the backend running?";
+        responseElement.innerHTML = "Failed to fetch answer. Is the backend running?"; 
     }
 }
