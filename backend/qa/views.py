@@ -3,7 +3,7 @@ from django.views.decorators.csrf import csrf_exempt
 from .models import Question
 import json
 
-@csrf_exempt  # This disables CSRF protection for this view
+@csrf_exempt  # This disables the CSRF protection for this view
 def ask_question(request):
     if request.method == "GET":
         return JsonResponse({"message": "Send a POST request with a question."})
